@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Weather Forecast App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+1. Display current weather information for a default city (New York).
+2. Search functionality to fetch weather data for any city.
+3. Display a 5-day weather forecast.
+4. Toggle between Celsius and Fahrenheit for temperature units.
+5. Responsive and clean UI for a smooth user experience.
 
-## Available Scripts
+## Setup Instructions
 
-In the project directory, you can run:
+### Prerequisites
+Make sure you have the following installed on your system:
 
-### `npm start`
+- Node.js (version 12 or later)
+- npm (Node package manager) or yarn
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Steps to Run the Project Locally:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository to your local machine:
 
-### `npm test`
+```bash
+git clone https://github.com/your-repository-url/weather-app.git
+cd weather-app
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies by running:
 
-### `npm run build`
+```bash
+Copy code
+npm install
+Or, if you're using yarn:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Replace your_api_key_here with your actual API key from OpenWeatherMap.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
 
-### `npm run eject`
+```bash
+Copy code
+npm start
+Or with yarn:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+yarn start
+View the application: Open your browser and go to http://localhost:3000 to view the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Assumptions Made During Development
+1. The weather forecast is based on OpenWeatherMap's API, and the 5-day forecast data is extracted by selecting one forecast entry per day (around midday).
+2. By default, the app displays weather information for New York when first loaded.
+3. Error handling is implemented to display appropriate messages when a city is not found or if there are network issues.
+4. The temperature conversion logic is implemented manually to switch between Celsius and Fahrenheit without using any external libraries.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How to Use the Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Default View:
 
-## Learn More
+When you first open the app, it shows the current weather and 5-day forecast for New York.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Searching for a City:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Enter a city name in the search bar and either click the Search button or press the Enter key to fetch the weather information for that city.
 
-### Code Splitting
+### Switching Temperature Units:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Click the Toggle °C/°F button to switch between Celsius and Fahrenheit for the current temperature and 5-day forecast.
 
-### Analyzing the Bundle Size
+### Responsive Design:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application adapts to different screen sizes, so it works well on both desktop and mobile devices.
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. React.js: A JavaScript library for building user interfaces.
+2. OpenWeatherMap API: For fetching real-time weather data.
+3. CSS: For styling the components and making the application responsive.
