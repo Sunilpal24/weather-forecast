@@ -20,7 +20,7 @@ Make sure you have the following installed on your system:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-repository-url/weather-app.git
+git clone https://github.com/Sunilpal24/weather-forecast.git
 cd weather-app
 ```
 
